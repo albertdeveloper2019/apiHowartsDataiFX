@@ -1,0 +1,30 @@
+<div class="container" style="padding-left: 58px;
+                              padding-right: 58px;
+                              margin-top: 10px;">
+                               <h3 style="text-align: center;"> Sección de estudiantes </h3>
+                               <table class="table table-dark">
+                                   <thead>
+                                     <tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">Name</th>
+                                       <th scope="col">Patronus</th>
+                                       <th scope="col">Age</th>
+                                       <th scope="col" style="text-align: center;">Image</th>
+                                       <th scope="col"></th>
+                                     </tr>
+                                   </thead>
+                                   <tbody>
+                                     <tr *ngFor="let item of array; let indice=index">
+                                       <th scope="row">{{indice + 1}}</th>
+                                       <td>{{item.name}}</td>
+                                       <td>{{item.patronus}}</td>
+                                       <td>{{item.yearOfBirth}}</td>
+                                       <td> <a class="nav-link"  routerLink="/estudiantes">{{item.image}}</a></td>
+                                       <td> 
+                                        <a class="nav-link"  routerLink="/estudiantes">add</a>
+                                      </td>
+                                     </tr>
+                                   </tbody>
+                                 </table>
+</div>
+

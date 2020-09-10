@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f04b0a;">
+    <a class="navbar-brand" href="#">Hogwarts</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Items del menu princiapl -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Personajes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" [routerLink]="['/personajes', 1]">slytherin</a>
+                <a class="dropdown-item" [routerLink]="['/personajes', 2]">gryffindor</a>
+                <a class="dropdown-item" [routerLink]="['/personajes', 3]">ravenclaw</a>
+                <a class="dropdown-item" [routerLink]="['/personajes', 4]">hufflepuff</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/estudiantes" routerLinkActive="active">Estudiantes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/profesores" routerLinkActive="active">Profesores</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
